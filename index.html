@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="backgroundImg">
+
+        <!-- Display of the temperature in a certain country and the value of the wind -->
+            <div id="temperature">
+                <!-- Country -->
+                <h1 id="country"></h1>
+                <!-- Temperature -->
+                <span id="temperatureNumber"></span>
+                <!-- Wind -->
+                <div id="detailedForecast">
+                    <!-- Wind Pressure -->
+                    <span id="weather"></span>
+                    <div id="H-L">
+                        <span id="highPressure"></span>
+                        <span id="lowPressure"></span>
+                    </div>
+                </div>
+            </div>
+        <!---->
+
+
+        <!-- FORECAST -->
+            <div id="forecast">
+
+                <div id="containerForecast">
+                    <div id="hourlyForecast">
+                        <button id="btn1">Hourly ForeCast</button>
+                    </div>
+                    <div id="weaklyForecast">
+                        <button id="btn2">Weakly ForeCast</button>
+                    </div>
+                </div>
+                
+                <div id="containerWeather">
+                    <div class="styledWeather item1">
+                        <span class="time1"></span>
+                        <img class="imgIcon1" src="" alt="">
+                        <span class="percent">30%</span>
+                        <span class="styledTemperature1"></span>
+                    </div>
+                    <div class="styledWeather item2">
+                        <span class="time2"></span>
+                        <img class="imgIcon2" src="" alt="">
+                        <span class="percent">30%</span>
+                        <span class="styledTemperature2"></span>
+                    </div>
+                    <div class="styledWeather item3">
+                        <span class="time3"></span>
+                        <img class="imgIcon3" src="" alt="">
+                        <span class="percent">30%</span>
+                        <span class="styledTemperature3"></span>
+                    </div>
+                    <div class="styledWeather item4">
+                        <span class="time4"></span>
+                        <img class="imgIcon4" src="" alt="">
+                        <span class="percent">30%</span>
+                        <span class="styledTemperature4"></span>
+                    </div>
+                    <div class="styledWeather item5">
+                        <span class="time5"></span>
+                        <img class="imgIcon5" src="" alt="">
+                        <span class="percent">30%</span>
+                        <span class="styledTemperature5"></span>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
