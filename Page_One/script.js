@@ -15,6 +15,20 @@ $(document).ready(function() {
         },
         success: function(response) {
 
+            if(response.current.condition['text'] == 'Sunny') {
+                $('.backgroundImg').css({
+                    'background-image': 'url(/img/6.jpg)'
+                })
+            } else if (response.current.condition['text'] == 'Partly cloudy') {
+                $('.backgroundImg').css({
+                    'background-image': 'url(/img/7.jpg)'
+                })
+            } else if (response.current.condition['text'] == 'Heavy rain' || response.current.condition['text'] == 'Moderate rain') {
+                $('.backgroundImg').css({
+                    'background-image': 'url(/img/8.jpg)'
+                })
+            }
+
             // trenutna vrednost izabranog grada
             $('#country').text(response.location['name']);
             $('#temperatureNumber').text(`${response.current['temp_c']}°C`);
@@ -54,7 +68,7 @@ $(document).ready(function() {
 
     $('#btn1').click(function() {
         $('.item2').css({
-            'background-color': 'aqua'
+            'background-image': 'linear-gradient(#2E335A, #1C1B33)'
         })
         $.ajax({
             // http://api.weatherapi.com/v1/forecast.json?key=eaac2ed3fb354158ab080556240503 &q=Belgrade&days=7&aqi=yes&alerts=yes
@@ -109,7 +123,7 @@ $(document).ready(function() {
 
     $('#btn2').click(function() {
         $('.item2').css({
-            'background-color': '#CF9FFF'
+            'background-image': 'none'
         })
         $.ajax({
             url: 'http://api.weatherapi.com/v1/forecast.json?',
