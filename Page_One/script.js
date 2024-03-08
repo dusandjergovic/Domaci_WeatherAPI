@@ -139,28 +139,28 @@ $(document).ready(function() {
                 // console.log(response);
     
                 // prognoza po danu
-                // ponedeljak
+                
                 $('.time1').text(`THU`)
                 $('.imgIcon1').attr('src', response.forecast.forecastday[0]['day'].condition['icon'])
                 $('.styledTemperature1').text(`${response.forecast.forecastday[0]['day']['maxtemp_c']}°C`)
     
     
-                // utorak
+                
                 $('.time2').text(`FRI`)
                 $('.imgIcon2').attr('src', response.forecast.forecastday[1]['day'].condition['icon'])
                 $('.styledTemperature2').text(`${response.forecast.forecastday[1]['day']['maxtemp_c']}°C`)
     
-                // sreda
+                
                 $('.time3').text(`SAT`)
                 $('.imgIcon3').attr('src', response.forecast.forecastday[2]['day'].condition['icon'])
                 $('.styledTemperature3').text(`${response.forecast.forecastday[2]['day']['maxtemp_c']}°C`)
     
-                // cetvrtak
+                
                 $('.time4').text(`SUN`)
                 $('.imgIcon4').attr('src', response.forecast.forecastday[3]['day'].condition['icon'])
                 $('.styledTemperature4').text(`${response.forecast.forecastday[3]['day']['maxtemp_c']}°C`)
     
-                // petak
+               
                 $('.time5').text(`MON`)
                 $('.imgIcon5').attr('src', response.forecast.forecastday[4]['day'].condition['icon'])
                 $('.styledTemperature5').text(`${response.forecast.forecastday[4]['day']['maxtemp_c']}°C`)
