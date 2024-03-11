@@ -1,9 +1,8 @@
-//  °C
+
 $(document).ready(function() {
 
 
     $.ajax({
-        // http://api.weatherapi.com/v1/forecast.json?key=eaac2ed3fb354158ab080556240503 &q=Belgrade&days=7&aqi=yes&alerts=yes
         url: 'http://api.weatherapi.com/v1/forecast.json?',
         method: 'GET',
         data: {
@@ -23,7 +22,7 @@ $(document).ready(function() {
                 $('.backgroundImg').css({
                     'background-image': 'url(/img/7.jpg)'
                 })
-            } else if (response.current.condition['text'] == 'Heavy rain' || response.current.condition['text'] == 'Moderate rain') {
+            } else if (response.current.condition['text'] == 'Heavy rain' || response.current.condition['text'] == 'Moderate rain' || response.current.condition['text'] == 'Light rain') {
                 $('.backgroundImg').css({
                     'background-image': 'url(/img/8.jpg)'
                 })
@@ -71,7 +70,6 @@ $(document).ready(function() {
             'background-image': 'linear-gradient(#2E335A, #1C1B33)'
         })
         $.ajax({
-            // http://api.weatherapi.com/v1/forecast.json?key=eaac2ed3fb354158ab080556240503 &q=Belgrade&days=7&aqi=yes&alerts=yes
             url: 'http://api.weatherapi.com/v1/forecast.json?',
             method: 'GET',
             data: {
@@ -136,16 +134,12 @@ $(document).ready(function() {
                 alerts: 'yes'
             },
             success: function(response) {
-                // console.log(response);
     
                 // prognoza po danu
                 
                 $('.time1').text(`THU`)
                 $('.imgIcon1').attr('src', response.forecast.forecastday[0]['day'].condition['icon'])
                 $('.styledTemperature1').text(`${response.forecast.forecastday[0]['day']['maxtemp_c']}°C`)
-    
-    
-                
                 $('.time2').text(`FRI`)
                 $('.imgIcon2').attr('src', response.forecast.forecastday[1]['day'].condition['icon'])
                 $('.styledTemperature2').text(`${response.forecast.forecastday[1]['day']['maxtemp_c']}°C`)

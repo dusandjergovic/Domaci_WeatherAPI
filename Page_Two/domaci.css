@@ -12,10 +12,8 @@ body, html {
     background-image: url(/img/3.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
-    /* background-image: linear-gradient(#2E335A, #1C1B33); */
     height: 100%;
     display: grid;
-    /* place-items: center; */
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(4, 1fr);
     display: flex;
@@ -42,10 +40,6 @@ body, html {
  }
 
  .item2 {
-    /* border: 1px solid red; */
-    /* /* background-color: rgb(22, 214, 205, 0.5); */
-    /* border-radius: 3rem; */
-    color: white;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -53,12 +47,10 @@ body, html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    /* width: 300px; */
  }
 
  .item2Container {
    padding: 1.5rem;
-   /* border: 1px solid red; */
    display: flex;
    flex-direction: column;
    gap: .5rem;
@@ -73,31 +65,28 @@ body, html {
  .temp {
     font-size: 50px;
     font-family: 'SF Pro Display', sans-serif;
+    color: white;
  }
  .tempCloud {
     display: flex;
     align-items: center;
     gap: 3rem;
-    /* padding: 2rem; */
-    /* border: 1px solid red; */
     width: 260px;
     margin-top: -10px;   
     margin-left: -10px;
 }
 
  .pressurePlace {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     width: 260px;
-    /* margin-top: -10px; */
     margin-left: -10px;
     font-family: "SF Pro Text Regular";
+    color: white;
 
  }
 
  .smallText {
    display: flex;
    justify-content: space-between;
-   /* gap: 3rem; */
  }

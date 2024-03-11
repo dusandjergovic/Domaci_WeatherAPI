@@ -8,7 +8,6 @@ $(document).ready(function() {
             aqi: 'yes',
         },
         success: function(response) {
-            console.log(response);
             $('.city').text(response.location['name']);
             $('.temp').text(`${response.current['temp_c']}°C`)
             $('.cloud').attr('src', response.current.condition['icon'])
@@ -25,7 +24,6 @@ $(document).ready(function() {
             aqi: 'yes',
         },
         success: function(response) {
-            console.log(response);
             $('.temp2').text(`${response.current['temp_c']}°C`)
             $('.cloud2').attr('src', response.current.condition['icon'])
             $('.place2').text(`${response.location['name']}, ${response.location['country']}`)
@@ -41,7 +39,6 @@ $(document).ready(function() {
             aqi: 'yes',
         },
         success: function(response) {
-            console.log(response);
             $('.temp3').text(`${response.current['temp_c']}°C`)
             $('.cloud3').attr('src', response.current.condition['icon'])
             $('.place3').text(`${response.location['name']}, ${response.location['country']}`)
