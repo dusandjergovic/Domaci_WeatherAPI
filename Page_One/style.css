@@ -157,3 +157,18 @@ body, html {
  .percent {
     color: lightskyblue;
  }
+
+ #search {
+   /* width: 100px; */
+   height: 50px;
+   margin-top: 50px;
+   grid-row: 1 / 1;
+   grid-column: 2 / 4;
+ }
+ #btnIzabraniGrad {
+   grid-row: 1 / 1;
+   grid-column: 4 / 5;
+   width: 100px;
+   height: 50px;
+   margin-top: 50px;
+ }
